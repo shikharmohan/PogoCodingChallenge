@@ -8,11 +8,11 @@ services:
       ports:
           - '3000:3000'
       volumes: 
-        - .:/app/mern-docker-app
+        - .:/app/pogo-coding-challenge
     
     mongo:
       image: mongo:latest
       ports: 
         - '27017:27017'
       volumes:
-          - ~/mongo-db-docker-data:/data/db
+          - ~/pogo-coding-challenge:/data/db

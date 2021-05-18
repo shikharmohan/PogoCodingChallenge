@@ -8,7 +8,7 @@ import passport from 'passport';
 import './database/index';
 import setup from './config/passport';
 
-// routes
+// route
 import usersRoutes from './routes/users';
 import plaidRoutes from './routes/plaid';
 

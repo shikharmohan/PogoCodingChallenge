@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /app/mern-docker-app
+WORKDIR /app/pogo-coding-challenge
 
 EXPOSE 3000
 
