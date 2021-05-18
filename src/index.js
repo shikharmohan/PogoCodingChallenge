@@ -14,6 +14,8 @@ import plaidRoutes from './routes/plaid';
 
 const app = express();
 
+const a = 3;
+
 const port = process.env.PORT;
 
 const publicDirectory = require('path').join(__dirname, '../client/build');
