@@ -26,6 +26,12 @@ Points System: For an eligible purchase, if the amount is below $25 they earn 5 
 
 Hint: the only API you'll need to use is the Plaid Transactions endpoint to fetch transactions for a linked Plaid Account.
 
+To link an account via the sandbox environment: 
+1. Click on Link Account button
+2. Pick any bank account logo from the Plaid interface.
+3. Username is `user_good`
+4. Password is `pass_good`
+
 Out of scope: 
 1. Supporting multiple Plaid linked accounts
 2. Making it look pretty, responsive etc. 
