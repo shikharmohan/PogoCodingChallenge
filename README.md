@@ -17,6 +17,8 @@ By the end of this exercise, a user should be able to:
 2. View eligible purchases from the last 60 days that are available to claim. 
 3. Each eligible purchase should have a point value associated with it and a user should be able claim points associated with each purchase.
 4. The user should see their point total increase as they claim more purchases. 
+5. The claimed purchase should disappear from the list of purchases to claim.
+6. Claim only transactions that belong to their linked plaid accounts. User's should not be rewarded points for purchases that they didn't make or for purchases not tied to accounts they've linked. 
 
 How to determine if a transaction/purchase is eligible for points:
 1. The `amount` field is > 0
@@ -32,15 +34,16 @@ To link an account via the sandbox environment:
 3. Username is `user_good`
 4. Password is `pass_good`
 
-Out of scope: 
+Bonus/Nice to haves:
 1. Supporting multiple Plaid linked accounts
 2. Making it look pretty, responsive etc. 
+3. Viewing already claimed purchases
 
-The focus of this exercise is to see how you can build something functional end-to-end. By the end of this, you will have created or modified data models, apis and views/components. Please add unit tests only to the code you're introducing. 
+By the end of this, you will have created or modified data models, apis and views/components.
 
 Feel free to use any publicly available resources, libraries, etc. that helps you accomplish this coding challenge!
 
-Ran into issues or have questions? Email shikhar@joinpogo.com
+Run into issues or have questions? Email shikhar@joinpogo.com
 
 <br>
 
@@ -56,7 +59,7 @@ Ran into issues or have questions? Email shikhar@joinpogo.com
 
   [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
-- ## Clone the repository
+- ## Clone the repository (don't fork)
 
 ```bash
     git clone https://github.com/shikharmohan/PogoCodingChallenge.git
@@ -83,12 +86,5 @@ Ran into issues or have questions? Email shikhar@joinpogo.com
 ```
 > `docker-compose down` stops containers and removes containers, networks, volumes, and images
 created by `docker-compose up`.
-
-- ## Running tests
-
-Tests need to be run in the project's root directory for the express backend and in the `client` directory for the react frontend. Test files should have the `.test.js` extension. 
-```bash
-   npm run test && cd client && npm run test && cd ..
-```
 
 <br><br>

@@ -14,11 +14,9 @@ import plaidRoutes from './routes/plaid';
 
 const app = express();
 
-const a = 3;
-
 const port = process.env.PORT;
 
-const publicDirectory = require('path').join(__dirname, '../client/build');
+const publicDirectory = require('path').join(__dirname, '../');
 
 app.use(logger("dev"));
 app.use(cookieParser());
@@ -28,7 +26,7 @@ app.use(
 	})
 );
 app.use(json());  
-app.use(express.static(publicDirectory));
+app.use(express.static('dist'));
 app.use(express.json());
 app.use(
 	cors({
