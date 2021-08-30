@@ -16,7 +16,6 @@ import User from '../models/User';
  * @param password2 : String
  */
 const register = (req, res) => {
-  console.log(req);
   User
     .findOne({ email: req.body.email })
     .then(user => {
