@@ -39,7 +39,7 @@ Bonus/Nice to haves:
 2. Making it look pretty, responsive etc. 
 3. Viewing already claimed purchases
 
-By the end of this, you will have created or modified data models, apis and views/components.
+By the end of this, you will have created or modified data models, apis and views/components. The actions taken by the user and all data should be persisted in Mongo. 
 
 Feel free to use any publicly available resources, libraries, etc. that helps you accomplish this coding challenge!
 
@@ -69,7 +69,7 @@ Run into issues or have questions? Email shikhar@joinpogo.com
 ```
 - ## Install dependencies
 ```bash
-    npm i && cd client && npm i && cd ..
+    npm i
 ```
 
 - ## Starting development environment
@@ -78,6 +78,8 @@ Run into issues or have questions? Email shikhar@joinpogo.com
     docker-compose up --remove-orphans --build
 ```
 >   to stop `docker-compose up` use <kbd>Ctrl</kbd> + <kbd>c</kbd>
+
+The app runs on port 8080, so if you navigate to localhost:8080, you should see the app.
 
 - ## Stopping development environment
 
