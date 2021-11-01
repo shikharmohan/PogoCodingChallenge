@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              <b>Link</b> your banking asdf accounts and monitor your data with
+              <b>Link</b> your banking accounts and monitor your data with
               <span style={{ fontFamily: 'monospace' }}> POGO</span>
             </h4>
             <p className="flow-text grey-text text-darken-1">
