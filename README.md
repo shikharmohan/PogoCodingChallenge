@@ -79,7 +79,8 @@ Run into issues or have questions? Email shikhar@joinpogo.com
 ```
 >   to stop `docker-compose up` use <kbd>Ctrl</kbd> + <kbd>c</kbd>
 
-The app runs on port 8080, so if you navigate to localhost:8080, you should see the app.
+The app is served on port 3000, so if you navigate to localhost:3000, you should see the app. 
+_The api is hosted on port 8080, but the frontend hot module replacement will not work there, if you see the webapp but your frontend changes don't refresh the page automatically, check if you accidentally on port 8080 in the browser._
 
 - ## Stopping development environment
 
