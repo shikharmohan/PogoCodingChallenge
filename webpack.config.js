@@ -35,10 +35,10 @@ module.exports = {
     host: '0.0.0.0',
     port: 3000,
     contentBase: path.join(__dirname, outputDirectory),
-    public: 'localhost',
+    public: 'localhost', //so sockjs can open the stream
     open: true,
     inline: true,
-    historyApiFallback: true,
+    historyApiFallback: true, //so we let the SPA do its thing
     publicPath: '/',
     proxy: {
       '/api': 'http://localhost:8080'
