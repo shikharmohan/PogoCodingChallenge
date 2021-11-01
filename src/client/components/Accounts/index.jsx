@@ -93,7 +93,7 @@ class Accounts extends Component {
               <b>Welcome!</b>
             </h4>
             <p className="grey-text text-darken-1">
-              Hey there,
+              Hey there asdf,
               {user.name.split(' ')[0]}
             </p>
             <hr style={{ marginTop: '2rem', opacity: '.2' }} />

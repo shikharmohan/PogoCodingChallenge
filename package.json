@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode development && babel src -d dist",
     "start": "npm run build && node dist/server/index.js",
-    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "client": "npx webpack serve --mode development --devtool inline-source-map --hot --open --useLocalIp",
     "server": "nodemon --watch src -x 'npm run build &&  env-cmd -f src/config/dev.env node dist/server/index.js'",
     "dev": "npm run build && concurrently \"npm run server\" \"npm run client\""
   },
@@ -51,6 +51,7 @@
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@webpack-cli/serve": "^1.6.0",
     "babel-eslint": "^10.0.0",
     "babel-loader": "^8.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -68,7 +69,7 @@
     "style-loader": "^0.23.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.5.0",
-    "webpack-cli": "^3.0.8",
+    "webpack-cli": "^4.3.0",
     "webpack-dev-server": "^3.1.3"
   }
 }
