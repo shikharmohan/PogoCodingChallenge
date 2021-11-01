@@ -35,11 +35,11 @@ module.exports = {
     host: '0.0.0.0',
     port: 3000,
     contentBase: path.join(__dirname, outputDirectory),
+    public: 'localhost',
     open: true,
     inline: true,
     historyApiFallback: false,
     publicPath: '/',
-    writeToDisk: true,
     proxy: {
       '/api': 'http://localhost:8080'
     }
