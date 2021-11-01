@@ -38,7 +38,7 @@ module.exports = {
     public: 'localhost',
     open: true,
     inline: true,
-    historyApiFallback: false,
+    historyApiFallback: true,
     publicPath: '/',
     proxy: {
       '/api': 'http://localhost:8080'
