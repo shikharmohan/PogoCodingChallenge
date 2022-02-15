@@ -1,5 +1,6 @@
 # Pogo Coding Challenge
 
+## Context
 In the Pogo mobile app, we integrate with Plaid to pull a user's purchase data and reward them with points. The core mechanism in the Pogo mobile is app is the Claim Feed. This is a feed of recent purchases made by the user and each row in the claim feed has the purchase details as well as the amount of points earned. Users can earn points by pressing the claim button on each purchase. 
 
 From the Pogo Mobile App: 
@@ -8,7 +9,9 @@ From the Pogo Mobile App:
 
 # Your Task
 
-In this coding challenge, you will work with this MERN (Mongo, Express, React, Node) web app to allow users to earn points by claiming their recent transactions. The current app supports user creation and authentication. It also supports the linking and un-linking of Plaid accounts in their sandbox environment (sandbox API keys are included in the repo). Your task is to replicate the behavior we see in the Pogo app. You'll build your component in the "Purchases to Claim" section.
+In this coding challenge, you will work with this MERN (Mongo, Express, React, Node) web app to allow users to earn points by claiming their recent transactions. 
+
+**Your task is to replicate the behavior we see in the Pogo app.** You'll build your component in the "Purchases to Claim" section.
 
 ![image](https://user-images.githubusercontent.com/5782586/118696311-28323800-b7dc-11eb-8c11-de6db6677692.png)
 
@@ -24,14 +27,17 @@ By the end of this exercise, a user should be able to:
   - [ ] The user should see their total claimed points
   - [ ] The user should see their point total increase as they claim more purchases.
 
-## Bonus/Nice to haves:
+### Bonus/Nice to haves:
 - [ ] Supporting multiple Plaid linked accounts
 - [ ] Making it look pretty, responsive etc. 
 - [ ] Viewing already claimed purchases
 
+### What has been built for you already
 
-### Tips
+- User creation and authentication.
+- Linking and un-linking of Plaid accounts in their sandbox environment (sandbox API keys are included in the repo)
 
+## Tips
 
 - How to determine if a transaction/purchase is eligible for points:
   1. The `amount` field is `> 0`
