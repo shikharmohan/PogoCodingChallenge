@@ -16,11 +16,11 @@ In this coding challenge, you will work with this MERN (Mongo, Express, React, N
 ![image](https://user-images.githubusercontent.com/5782586/118696311-28323800-b7dc-11eb-8c11-de6db6677692.png)
 
 ## Requirements
-By the end of this exercise, a user should be able to: 
+By the end of this exercise, a user should be able to do the following: 
 
 - Purchases
   - [ ] View eligible purchases from the last 60 days that are available to claim.
-  - [ ] Each eligible purchase should have a point value associated with it and a user should be able claim points associated with each purchase.
+  - [ ] Each eligible purchase should have a point value associated with it and a user should be able to claim points associated with each purchase.
   - [ ] Claimed purchase should disappear from the list of purchases to claim.
   - [ ] Users should only be able to claim transactions that belong to their linked plaid accounts. 
 - Points 
@@ -29,7 +29,7 @@ By the end of this exercise, a user should be able to:
 
 ### Bonus/Nice to haves:
 - [ ] Supporting multiple Plaid linked accounts
-- [ ] Making it look pretty, responsive etc. 
+- [ ] Making the app look pretty, responsive etc. 
 - [ ] Viewing already claimed purchases
 
 ### What has been built for you already
@@ -45,7 +45,7 @@ By the end of this exercise, a user should be able to:
 
 - Points System: For an eligible purchase, if the amount is below $25 they earn 5 points, otherwise they earn 10 points. 
 
-- User's should not be rewarded points for purchases that they didn't make or for purchases not tied to accounts they've linked.
+- Users should not be rewarded points for purchases that they didn't make or for purchases not tied to accounts they've linked.
 
 - Hint: the only API you'll need to use is the Plaid Transactions endpoint to fetch transactions for a linked Plaid Account.
 
